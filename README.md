@@ -1,4 +1,4 @@
-McGill_LunarEx_2014_Web
+Web_2014
 =======================
 
-The Official McGill LunarEx 2014 Website
+The Official McGill LunarEx 2014 Website: lunarex.mcgill.ca
