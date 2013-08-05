@@ -19,7 +19,7 @@
    -o-transition: 0.5s;
 }
 
-.container:hover .card {
+.container.flip .card {
    -webkit-transform: rotateY(180deg);
    -moz-transform: rotateY(180deg);
    -ms-transform: rotateY(180deg);

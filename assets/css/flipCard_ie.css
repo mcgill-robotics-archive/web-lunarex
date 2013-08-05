@@ -25,7 +25,7 @@
     z-index: 5;
 }
 
-.container:hover .front {
+.container.flip .front {
     z-index: 0;
     animation:fadeout 0.2s
 }
