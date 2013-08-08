@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<!--CSS-->
+<head>
+<style type="text/css">
+   body {
+       margin:0; padding:0;
+   }
+   html, body, #bg {
+       height:100%;
+       width:100%;
+   }
+   #bg {
+	position:absolute;
+       left:0;
+       right:0;
+       bottom:0;
+       top:0;
+       overflow:hidden;
+       z-index:-1
+   }
+   #bg img {
+       width:100%;
+       min-width:100%;
+       min-height:100%; 
+   }
+   #play{
+      position:absolute;
+      left:575px;
+      top:280px;
+      z-index:10;
+   }
+   #play img{
+      height:25%;
+      width:25%;
+}
+   #logo{
+      z-index:10;
+      position:absolute;
+      left:30px;
+      top:40px;
+}
+   #logo img{
+     height:100px;
+     width:250px;
+}
+</style>
+</head>
+<body>
+<div id="bg">
+   <img style="display:block;" src="backgroundPicture.jpg">
+</div>
+<div id="logo">
+	<a href=...><img src="./finalLogo.png"></a>
+</div>
+<div id="play">
+	<img src="./play.png">
+</div>
+  </body>
+</html>
