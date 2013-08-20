@@ -2,7 +2,6 @@ var nav = '.nav',
 	li = '.nav li',
 	control = '.carousel-control'
 	navs = [
-		'',
 		'competition',
 		'team',
 		'design',
@@ -15,7 +14,7 @@ function changeState() {
 	if (!$(this).hasClass('active')) {
 		$(li).removeClass('active');
 		$(this).addClass('active');
-		current_slide_number = $(this).data('slide-number');
+		current_slide_number = parseInt($(this).children()[0].id.replace('carousel-selector-', ''));
 	}
 }
 
