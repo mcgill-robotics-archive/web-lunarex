@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9,10 +9,6 @@
     <meta name="author" content="">
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <style>
-      body { padding-top: 60px; /* 60px to make the container go all the way
-      to the bottom of the topbar */ }
-    </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -631,6 +627,16 @@ Shawn Fontaine</p>
         -webkit-background-size: cover;
       }
       
+      html,body{
+        height:100%;
+      }
+      .carousel,.item,.active{
+        height:100%;
+      }
+      .carousel-inner{
+        height:100%;
+      }
+
       .carousel-caption {
         background-color: transparent;
         position: static;
@@ -828,4 +834,3 @@ Shawn Fontaine</p>
                               $(this).toggleClass('flip');
                               })
     </script>
-
