@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9,10 +9,6 @@
     <meta name="author" content="">
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <style>
-      body { padding-top: 60px; /* 60px to make the container go all the way
-      to the bottom of the topbar */ }
-    </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -58,10 +54,10 @@
     				<a class="brand" href="#"><img src="./logo_transparentbg.png"></a>
     				<div class="nav-collapse collapse">
     					<ul class="nav">
-    						<li>
+    						<li class="active">
     							<a href="#competition" id="carousel-selector-0">Competition</a>
     						</li>
-                            <li class="active">
+                            <li>
         						<a href="#team" id="carousel-selector-1">Meet the Team</a>
     						</li>
     						<li>
@@ -277,7 +273,7 @@
 			<p style="text-align:center;text-decoration:underline;color:black;">Excavation</p>
 		</div>
 	</div>
-  	<div class="span1">
+  	<div class="span1" style="width:80px;">
 		<div class="boxed">
 			<p style="text-align:center;text-decoration:underline;color:black;">Mineral Collection</p>
 		</div>
@@ -297,7 +293,7 @@
 			<p style="text-align:center;text-decoration:underline;color:black;">Frame</p>
 		</div>
   </div>
-  <div class="span1">
+  <div class="span1" style="width:30px;">
 			<p style="text-align:center;text-decoration:underline;color:black;"></p>
   </div>
   <div class="span1">
@@ -348,11 +344,26 @@
 		<p style="text-align:center;color:black;">Michael Elliot King</p>
 		<br>Charles Joseph Turner<br>
 		<br>Patrick Abouzakhm<br>
-		<br>Spencer Boone<br>
+		<br>Spencer Boone
 	</div>
   </div>
-  <div class="span1"><p style="color:black;text-align:center;">David Villegas Gonzalez</p></div>
-  <div class="span1"><p style="color:black;text-align:center;">Nate Xiao Ae</p></div>	
+  <div class="span1" style="width:83px;">
+	<div class="boxedWheels style="color:black;">
+		<p style="color:black;text-align:center;">David Villegas Gonzalez</p>
+		<br>Thomas Hoekman<br>
+		<br>Paul Albert-Lebrun<br>
+		<br>Todd McKenzie Scrimgeour<br>
+		<br>Shawn Fontaine
+	</div>
+  </div>
+  <div class="span1">
+	<div class="boxedLocomotion style="color:black;">
+		<p style="color:black;text-align:center;">Nate Xiao He</p>
+		<br>Samantha Baribeault<br>
+		<br>Hyder Ally Cadersa<br>
+		<br>Marc Wang
+	</div>
+  </div>	
   <div class="span1"><p style="color:black;text-align:center;">Matthew Mayers</p></div>	
   <div class="span1"><p style="color:black;text-align:center;"></p></div>
   <div class="span1"><p style="color:black;text-align:center;">Jean-Sebastien Dery</p></div>
@@ -367,7 +378,6 @@
 <div class="row-fluid">
   <div class="span1" style="z-order:10;"><p style="text-align:left;color:black;text-decoration:bold;"></p></div>
   <div class="span1"><p style="text-align:left;text-decoration:underline;color:black;">Charles Joseph Turner</p></div>
-  <div class="span1"><p style="color:black;">Thomas Hoekman</p></div>
   <div class="span1"><p style="color:black;"></p></div>
   <div class="span1"><p style="color:black;"></p></div>
   <div class="span1"><p style="color:black;"></p></div>
@@ -383,7 +393,6 @@
 <div class="row-fluid">
   <div class="span1"><p style="text-align:left;color:black;text-decoration:bold;"></p></div>
   <div class="span1"><p style="text-align:left;text-decoration:underline;color:black;">Patrick Abouzakhm</p></div>
-  <div class="span1"><p style="color:black;">Paul Albert-Lebrun</p></div>
   <div class="span1"><p style="color:black;"></p></div>
   <div class="span1"><p style="color:black;"></p></div>
   <div class="span1"><p style="color:black;"></p></div>
@@ -399,7 +408,6 @@
 <div class="row-fluid">
   <div class="span1" style="background-color:white;"><p style="text-align:left;color:black;text-decoration:bold;"></p></div>
   <div class="span1"><p style="text-align:left;text-decoration:underline;color:black;">Patrick Abouzakhm</p></div>
-  <div class="span1"><p style="color:black;">Paul Albert-Lebrun</p></div>
   <div class="span1"><p style="color:black;"></p></div>
   <div class="span1"><p style="color:black;"></p></div>
   <div class="span1"><p style="color:black;"></p></div>
@@ -688,7 +696,15 @@ Shawn Fontaine</p>
       
     	.boxedMineral { 
 	border:1px solid green;
-	height: 150px;
+	height: 190px;
+	background-color:white;
+	color:black;
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+      }
+	.boxedWheels { 
+	border:1px solid green;
+	height: 250px;
 	background-color:white;
 	color:black;
 	opacity: 0.6;
@@ -722,6 +738,16 @@ Shawn Fontaine</p>
         -webkit-background-size: cover;
       }
       
+      html,body{
+        height:100%;
+      }
+      .carousel,.item,.active{
+        height:100%;
+      }
+      .carousel-inner{
+        height:100%;
+      }
+
       .carousel-caption {
         background-color: transparent;
         position: static;
@@ -919,4 +945,3 @@ Shawn Fontaine</p>
                               $(this).toggleClass('flip');
                               })
     </script>
-
