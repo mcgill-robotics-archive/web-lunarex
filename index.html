@@ -55,7 +55,7 @@
 
 
     -->
-
+					  
     <div class="navbar-wrapper">
     	<div class="container">
     		<div class="navbar navbar-inverse">
@@ -114,6 +114,9 @@
     				</div>
     			</div>
     		</div>
+    		<div class="flip-ind" align="right">
+              <img src="Flip_Indicator.png" alt="Click for More" style="max-height: 100px; max-width: 100px;">
+		    </div>
     	</div>
     </div>
 
@@ -154,9 +157,6 @@
                           </div>
 
                       </div>
-					  <div style="position: relative; left: 300px; bottom: 60px;">
-                         <img src="Flip_Indicator.png" alt="Click for More" style="max-height: 150px; max-width: 150px;">
-					  </div>
                   </div>
                   
                 <div class="face back" style="background: url('photos/homeBack.jpg') no-repeat; background-size: 100%">
@@ -1277,5 +1277,9 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
     <script>
         $('.card-container').click(function() {
                               $(this).toggleClass('flip');
+                              })
+                              
+        $('.flip-ind').click(function() {
+                              $('.active').toggleClass('flip');
                               })
     </script>
