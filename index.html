@@ -248,8 +248,8 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
                     <div class="container" style="margin-left:50px">
                         <div class="carousel-caption">
 				
-				<h1 style="text-align:right;color:white;"> Meet The Team </h1> 
-                            <p style="color:white;text-align:right;">
+				<h1 style="text-align:left;color:white;"> Meet The Team </h1> 
+                            <p style="color:white;text-align:left;">
                                  Building a robot is a team effort, and in 2013 50 students came together to share their passion for robotics. 
                             </p> 
                         </div>
@@ -970,6 +970,10 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
       -------------------------------------------------- */
       
       /* Special class on .container surrounding .navbar, used for positioning it into place. */
+      .navbar {
+        margin-bottom: 0;
+      }
+      
       .navbar-wrapper {
         position: absolute;
         top: 0;
@@ -1151,7 +1155,9 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
         margin: 0;
         line-height: 1.25;
         color: #fff;
-        text-shadow: 0 1px 1px rgba(0,0,0,.4);
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
       }
       
       .carousel-caption .btn {
@@ -1160,7 +1166,8 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
       }
           
       .carousel-caption h2 { 
-        color: #fff
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.4);
       }
       
         /* Flip animation */
