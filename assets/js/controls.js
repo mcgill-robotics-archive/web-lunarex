@@ -2,6 +2,7 @@ var nav = '.nav',
 	li = '.nav li',
 	control = '.carousel-control'
 	navs = [
+	    '',
 		'competition',
 		'team',
 		'design',
@@ -29,9 +30,9 @@ function changeSlide() {
 	}
 
 	if (current_slide_number < 0) {
-		current_slide_number += 5;
-	} else if (current_slide_number > 4) {
-		current_slide_number -= 5;
+		current_slide_number += 6;
+	} else if (current_slide_number > 5) {
+		current_slide_number -= 6;
 	}
 
 	$(li).removeClass('active');
