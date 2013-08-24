@@ -20,7 +20,6 @@ function changeState() {
 }
 
 function changeSlide() {
-	console.log('sdi')
 	var action = $(this).data('slide');
 
 	if (action === 'prev') {
@@ -29,17 +28,17 @@ function changeSlide() {
 		current_slide_number += 1;
 	}
 
-	if (current_slide_number < 0) {
-		current_slide_number += 6;
-	} else if (current_slide_number > 5) {
-		current_slide_number -= 6;
-	}
+	current_slide_number = current_slide_number % 6;
+
+	console.log(current_slide_number);
 
 	$(li).removeClass('active');
 
 	$($(nav).children()[current_slide_number]).addClass('active');
 
 	location.hash = "#" + navs[current_slide_number];
+
+	return false;
 }
 
 $(document).on('click', li, changeState).on('click', control, changeSlide);
