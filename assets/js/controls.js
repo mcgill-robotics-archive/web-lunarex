@@ -7,7 +7,8 @@ var nav = '.nav',
 		'team',
 		'design',
 		'sponsorship',
-		'contact'
+		'contact',
+		'history'
 	],
 	current_slide_number = 0;
 
@@ -25,13 +26,13 @@ function changeSlide() {
 	if (action === 'prev') {
 		current_slide_number -= 1;
 		if (current_slide_number < 0) {
-			current_slide_number += 6
+			current_slide_number += 7
 		}
 	} else {
 		current_slide_number += 1;
 	}
 
-	current_slide_number = current_slide_number % 6;
+	current_slide_number = current_slide_number % 7;
 
 	console.log(current_slide_number);
 
