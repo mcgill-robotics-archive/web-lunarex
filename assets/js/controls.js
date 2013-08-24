@@ -24,6 +24,9 @@ function changeSlide() {
 
 	if (action === 'prev') {
 		current_slide_number -= 1;
+		if (current_slide_number < 0) {
+			current_slide_number += 6
+		}
 	} else {
 		current_slide_number += 1;
 	}
@@ -42,4 +45,12 @@ function changeSlide() {
 }
 
 $(document).on('click', li, changeState).on('click', control, changeSlide);
+
+$(document).ready(function() {
+		// Parse the url
+	var index = navs.indexOf(location.hash.replace('#', ''))
+	$($(nav).children('li')[index]).click();
+	$('#myCarousel').carousel(index);
+	current_slide_number = index;
+});
 
