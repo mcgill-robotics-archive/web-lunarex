@@ -145,14 +145,14 @@
              <div class="card">
                   <div class="face front" style="background: url('photos/homeFront.jpg') no-repeat; background-size: 100%;">
                       <div class="container">
-                          <div class="carousel-caption" style="height: 100%;">
+                          <div class="carousel-caption">
                               <h1>
                                   McGill LunarEx Robotics
                                   
                               </h1>
-                              <p>
+                              <h2>
                                   The Legend
-                              </p>
+                              </h2>
                                                      
                           </div>
 
@@ -166,9 +166,7 @@
                             <h1> McGill Robotics </h1>
                               <p>
                                 McGill LunarEx Robotics made history, but now we’ve moved on. We are recruiting and fundraising for McGill Robotics.
-                            </p>
                             <br>
-                            <p>
                               Click through this website to find out more about the legend of McGill Robotics. Find out more about each slide by clicking to flip.
                             </p>    
                         </div>
@@ -196,14 +194,12 @@
  				   <div class="card">
             		<div class="face front" style="background: url('competitionFrontGood.jpg') no-repeat; background-size: 100%">
 	                	<div class="container">
-                      <br>
-                      <img src="photos/Lunabotics Logo White.png">  
-    	                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                      <div class="carousel-caption">        	               
-                            <h1>
+                      		<img src="photos/Lunabotics Logo White.png">  
+                      		<div class="carousel-caption" align="bottom">        	               
+                           	  <h1>
                 	           	 	50 robots. 8 countries. 1 mission.
-                    	    	</h1>      
-                    		</div>
+                    	      </h1>      
+                			</div>
                 		</div>
             		</div>
             		<div class="face back" style="background: url('photos/competitionBack.jpg') no-repeat; background-size: 100%">
@@ -770,10 +766,10 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
                     <div class="container">
                         <div class="carousel-caption">
                            <h2>
-                                Email: <a href="mailto:lunarex.mcgill@gmil.com">LunarEx.McGill@gmail.com</a> <br>
+                                Email: <a href="mailto:lunarex.mcgill@gmail.com">LunarEx.McGill@gmail.com</a> <br>
                                 Phone: 1-514-531-7542 (Nick Speal) <br>
-                                Facebook<a href="facebook.com/mcgill.lunarex" target="_blank"> Facebook.com/McGill.LunarEx<a/> <br>
-                                LinkedIn <a href="linkedin.com/company/2923717" target="_blank"> LinkedIn.com/McGill.LunarEx</a> <br>
+                                Facebook<a href="http:/www.facebook.com/mcgill.lunarex" target="_blank"> Facebook.com/McGill.LunarEx<a/> <br>
+                                LinkedIn <a href="http:/www.linkedin.com/company/2923717" target="_blank"> LinkedIn.com/McGill.LunarEx</a> <br>
                                 Mailing Address: <br>
                                 McGill LunarEx Robotics <br>
                                 817 Sherbrooke West, MD 270 <br>
@@ -1109,6 +1105,7 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
       
       .carousel .container {
         position: relative;
+        height: 100%;
         z-index: 9;
       }
       
@@ -1148,7 +1145,7 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
         padding: 0 10px;
         margin-top: 0px;
       }
-      
+
       .carousel-caption h1,
       .carousel-caption .lead {
         margin: 0;
@@ -1159,7 +1156,13 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
       
       .carousel-caption .btn {
         margin-top: 10px;
+        margin-bottom: 10px;
       }
+          
+      .carousel-caption h2 { 
+        color: #fff
+      }
+      
         /* Flip animation */
         .card-container {
             position: relative;
