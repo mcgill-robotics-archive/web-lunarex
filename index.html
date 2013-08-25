@@ -117,8 +117,8 @@
     				</div>
     			</div>
     		</div>
-    		<div class="flip-ind" align="right">
-              <img src="Flip_Indicator.png" alt="Click for More" style="max-height: 100px; max-width: 100px;">
+    		<div class="flip-ind" style="position: fixed; right:20px; top:20px;">
+              <img src="Flip_Indicator.png" alt="Click for More" style="max-height: 100px; max-width: 100px; cursor: url('Flip_Cursor.png')">
 		    </div>
     	</div>
     </div>
@@ -197,9 +197,9 @@
  				   <div class="card">
             		<div class="face front" style="background: url('competitionFrontGood.jpg') no-repeat; background-size: 100%">
 	                	<div class="container">
-                      		<img src="photos/Lunabotics Logo White.png">  
-                      		<div class="carousel-caption" align="bottom">        	               
-                           	  <h1>
+                      		<img class= "shadowed_img" src="photos/Lunabotics Logo White.png" >  
+                      		<div class="carousel-caption" >        	               
+                           	  <h1 style="position: center; margin-top: 500px">
                 	           	 	50 robots. 8 countries. 1 mission.
                     	      </h1>      
                 			</div>
@@ -627,12 +627,13 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
 
         <div class="item card-container" data-slide-number="4">
             <div class="card">
-                <div class="face front" style="background: url('photos/sponsorshipFront.png') no-repeat; background-size: 75%; background-color:gray; background-position: center">
+                <div class="face front " style=" no-repeat; background-size: 75%; background-color:gray; background-position: center">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>
                                 Thank you for supporting McGill LunarEx Robotics
-                            </h1>      
+                            </h1>    
+                            <img class="shadowed_img" src="photos/sponsorshipFront.png" style="position: center; margin-top: 50px")>  
                         </div>
                     </div>
                 </div>
@@ -771,8 +772,8 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
                            <h2>
                                 Email: <a href="mailto:lunarex.mcgill@gmail.com">LunarEx.McGill@gmail.com</a> <br>
                                 Phone: 1-514-531-7542 (Nick Speal) <br>
-                                Facebook<a href="http:/www.facebook.com/mcgill.lunarex" target="_blank"> Facebook.com/McGill.LunarEx<a/> <br>
-                                LinkedIn <a href="http:/www.linkedin.com/company/2923717" target="_blank"> LinkedIn.com/McGill.LunarEx</a> <br>
+                                Facebook:<a href="http:/www.facebook.com/mcgill.lunarex" target="_blank"> Facebook.com/McGill.LunarEx<a/> <br>
+                                LinkedIn:<a href="http:/www.linkedin.com/company/2923717" target="_blank"> LinkedIn.com/McGill.LunarEx</a> <br>
                                 Mailing Address: <br>
                                 McGill LunarEx Robotics <br>
                                 817 Sherbrooke West, MD 270 <br>
@@ -887,9 +888,20 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
 
 
 
+            <!-- some shit MK took that makes a drop shadow for png images  -->
 
-
-
+            <svg height="0" xmlns="http://www.w3.org/2000/svg">
+            <filter id="drop-shadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+            <feOffset dx="12" dy="12" result="offsetblur"/>
+            <feFlood flood-color="rgba(0,0,0,0.5)"/>
+            <feComposite in2="offsetblur" operator="in"/>
+            <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+            </filter>
+            </svg>
 
 
 
@@ -1145,6 +1157,7 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
         max-width: 3000px;
         padding: 0 10px;
         margin-top: 0px;
+        text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
       }
 
       .carousel-caption h1,
@@ -1249,6 +1262,20 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
             background: #333333;
         }
 
+        /* *******  Custom classes  ************  */
+
+        .shadowed_img { /* adds drop shadow to all shapes of images, with additional html code above */
+
+          -webkit-filter: drop-shadow(0px 4px 3px rgba(0,0,0,0.5));
+          filter: url(#drop-shadow);
+          -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, 
+          Color='#444')";
+          filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, 
+          Color='#444')";
+         }
+
+
+git commit -m "fixed position of text on competition card, edited flip indicator and fixed position of it, added text shadow to captions for better visibility"
       
       /* RESPONSIVE CSS
       -------------------------------------------------- */
