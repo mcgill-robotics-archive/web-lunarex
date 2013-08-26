@@ -29,11 +29,16 @@
           vertical-align: middle;
         }
         .team_table {
-          background-color: rgba(0, 0, 0, 0.6);
+          background-color: rgba(0, 0, 0, 0.4);
+         /* -webkit-filter: blur(20px); */
           color: white;
-          font-weight: bold;
+          /* font-weight: bold;  */
           width: 100%;
-          padding: 40px;
+          text-shadow: 0 0px 12px rgba(0,0,0,0.9);
+             -moz-box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+          -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+                  box-shadow: 0px 0px 20px rgba(0,0,0,.5); */
+
         }
         .titles {
           text-decoration: underline;
@@ -191,7 +196,7 @@
         -->
         <div class="item card-container" data-slide-number="1">
  				   <div class="card">
-            		<div class="face front" style="background: url('competitionFrontGood.jpg') no-repeat; background-size: 100%">
+            		<div class="face front" style="background: url('photos/competitionFront.jpg') no-repeat; background-size: 100%">
 	                	<div class="container">
                       		<img class= "shadowed_img" src="photos/Lunabotics Logo White.png" >  
                       		<div class="carousel-caption" >        	               
@@ -232,7 +237,7 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
 
         <div class="item card-container" data-slide-number="2">
           <div class="card">
-            <div class="face front" style="background: url('teamFront.jpg') no-repeat; background-size: 100%">
+            <div class="face front" style="background: url('photos/teamFront.jpg') no-repeat; background-size: 100%">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>
@@ -250,37 +255,35 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
 				
 				<h1 style="text-align:left;color:white;"> Meet The Team </h1> 
                             <p style="color:white;text-align:left;">
-                                 Building a robot is a team effort, and in 2013 50 students came together to share their passion for robotics. 
+                                 Building a robot is a team effort, and in 2013 50 students came together to share their passion for robotics. <br>
                             </p> 
                         </div>
-
-			<br>
       <div class="row-fluid team_table">
-         <div class="span12 titles">
-            <p>Project Manager</p>
+         <div class="span12 ">
+            <h2>Project Manager</h2>
             <p> Nick Speal</p>
           </div>
         <div class="row-fluid">
-            <div class="span5 titles">
-            <p>Mechanical Team</p>
+            <div class="span5 ">
+            <h3>Mechanical Team</h3>
             <p> Juan Celis </p>
           </div>
           <div class="span1">
             <p></p>
           </div>
-          <div class="span3 titles">
-            <p>Electrical Team</p>
+          <div class="span3 ">
+            <h3>Electrical Team</h3>
             <p> Matthew Johnston </p>
           </div>
           <div class="span1">
             <p></p>
           </div>
-          <div class="span2 titles">
-            <p>Software Team</p>
+          <div class="span2 ">
+            <h3>Software Team</h3>
             <p> Ernest Oppetit </p>
           </div>
         </div>
-        <div class="row-fluid">
+        <div class="row-fluid teams">
           <div class="span1 titles">
             <p>Excavation</p>
           </div>
@@ -628,13 +631,13 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
 
         <div class="item card-container" data-slide-number="4">
             <div class="card">
-                <div class="face front " style=" no-repeat; background-size: 100%; background-color:black; background-position: center">
+                <div class="face front " style=" no-repeat; background-size: 100%; background-color:#5a5a5a; background-position: center">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>
                                 Thank you for supporting McGill LunarEx Robotics
                             </h1>    
-                            <img class="shadowed_img" src="photos/sponsorshipFront.png" style="vertical-align: middle;")>  
+                            <img class="shadowed_img" src="photos/sponsorshipFront.png" style="vertical-align: middle; margin-top: 30px")>  
                         </div>
                     </div>
                 </div>
@@ -796,7 +799,7 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>
-                              Want to join the team?
+                              Want to get in touch with us?
 
                             </h1> 
                             </div>     
@@ -804,8 +807,8 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
                     </div>
                 <div class="face back" style="background: url('photos/contactBack.jpg') no-repeat; background-size: 100%">
                     <div class="container">
-                        <div class="carousel-caption">
-
+                        <div class="carousel-caption" style="margin-top:100px;">
+                              <h2>
                                 Email: <a href="mailto:lunarex.mcgill@gmail.com">LunarEx.McGill@gmail.com</a> <br>
                                 Phone: 1-514-531-7542 (Nick Speal) <br>
                                 <a class="btn btn-facebook" href="http:/www.facebook.com/mcgill.lunarex" target="_blank"><i class="icon-facebook"></i> | LunarEx on Facebook</a>
@@ -817,6 +820,7 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
                                 817 Sherbrooke West, MD 270 <br>
                                 Montreal, QC, H3A0C3 <br>
                                 Canada <br>
+                                </h2>
                         </div>
                     </div>
                 </div>  
@@ -1398,7 +1402,17 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
             background: #333333;
         }
 
-        /* *******  Custom classes  ************  */
+
+
+
+
+
+/* *******  Custom classes  ************ *********************************************************************************** */
+
+
+
+
+
 
         .shadowed_img { /* adds drop shadow to all shapes of images, with additional html code above */
 
@@ -1408,6 +1422,12 @@ Each team builds either a remote-controlled or autonomous robot whose goal is to
           Color='#444')";
           filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, 
           Color='#444')";
+         }
+
+
+         .accordion-heading {
+          font-size: 32px;
+          font-weight: bold;
          }
 
 
