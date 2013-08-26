@@ -4,6 +4,8 @@ $(document).ready(function() {
 			$('.carousel-control.left').click();
 		} else if (e.keyCode === 39) {
 			$('.carousel-control.right').click();
+		} else if (e.keyCode === 32) {
+			$('.active').toggleClass('flip');
 		}
 	});
 });
