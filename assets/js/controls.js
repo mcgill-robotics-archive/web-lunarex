@@ -34,8 +34,6 @@ function changeSlide() {
 
 	current_slide_number = current_slide_number % 7;
 
-	console.log(current_slide_number);
-
 	$(li).removeClass('active');
 
 	$($(nav).children()[current_slide_number]).addClass('active');
