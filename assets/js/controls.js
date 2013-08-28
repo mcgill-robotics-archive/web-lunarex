@@ -8,7 +8,9 @@ var nav = '.nav',
 		'design',
 		'sponsorship',
 		'contact',
-		'history'
+		'history',
+		'design',
+		'media'
 	],
 	current_slide_number = 0;
 
@@ -26,13 +28,13 @@ function changeSlide() {
 	if (action === 'prev') {
 		current_slide_number -= 1;
 		if (current_slide_number < 0) {
-			current_slide_number += 7
+			current_slide_number += 9
 		}
 	} else {
 		current_slide_number += 1;
 	}
 
-	current_slide_number = current_slide_number % 7;
+	current_slide_number = current_slide_number % 9;
 
 	$(li).removeClass('active');
 
