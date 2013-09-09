@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9,8 +9,10 @@
     <meta name="author" content="">
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/social-buttons.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="assets/css/flipCard.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
@@ -44,6 +46,9 @@
           text-decoration: underline;
         }
     </style>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="assts/js/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
+    <script src="assets/js/gallery.js" type="text/javascript"></script>
   </head>
   <body>
     
@@ -57,7 +62,7 @@
 
     -->
 					  
-    <div class="navbar-wrapper">
+    <div class="navbar-wrapper" style="z-index:99;">
     	<div class="container">
     		<div class="navbar navbar-inverse">
     			<div class="navbar-inner">
@@ -90,7 +95,9 @@
                 <li>
                     <a href="#history" id="carousel-selector-6">History</a>
                 </li>
-
+                <li>
+                    <a href="#media" id="carousel-selector-7">Media</a>
+                </li>
 <!--     						<li class="dropdown">
     							<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
     							<ul class="dropdown-menu">
@@ -119,7 +126,7 @@
     				</div>
     			</div>
     		</div>
-    		<div class="flip-ind" style="position: fixed; right:20px; top:20px;">
+    		<div class="flip-ind" style="z-index:99;position: fixed; right:20px; top:20px;">
               <img src="Flip_Indicator.png" alt="Click for More" style="max-height: 100px; max-width: 100px; cursor: url('Flip_Cursor.png')">
 		    </div>
     	</div>
@@ -133,7 +140,7 @@
 
     <div id="myCarousel" class="carousel slide" data-pause="remove" data-interval="false">
         
-    	<div class="carousel-inner">
+      <div class="carousel-inner">
 
         
       <!-- 
@@ -249,7 +256,7 @@
                         
                     </div>
                 </div>
-</div>
+            </div>
                 <div class="face back team" style="background: url('photos/teamBack.jpg') no-repeat; background-size: 100%">
                     <div class="container" style="margin:0 auto">
 <!--                         <div class="carousel-caption">
@@ -269,10 +276,7 @@
             <h3>Mechanical Team</h3>
             <p> Juan Celis </p>
           </div>
-          <div class="span1">
-            <p></p>
-          </div>
-          <div class="span3 ">
+          <div class="span4 ">
             <h3>Electrical Team</h3>
             <p> Matthew Johnston </p>
           </div>
@@ -297,9 +301,9 @@
           <div class="span1 titles">
             <p>Frame</p>
           </div>
-          <div class="span1">
+         <div class="span1" style="width:5px;">
             <p></p>
-          </div>
+          </div> 
           <div class="span1 titles">
             <p>Motors</p>
           </div>
@@ -308,6 +312,9 @@
           </div>
           <div class="span1 titles">
             <p>Power Monitoring</p>
+          </div>
+	  <div class="span1" style="width:35px;">
+            <p></p>
           </div>
           <div class="span1 titles">
             <p>Lead Developers</p>
@@ -332,7 +339,7 @@
           <div class="span1">
             <p>Matthew Mayers</p>
           </div>
-          <div class="span1">
+          <div class="span1" style="width:5px;">
             <p></p>
           </div>
           <div class="span1">
@@ -344,6 +351,9 @@
           <div class="span1">
             <p>Benjamin Suire</p>
           </div>
+	<div class="span1" style="width:35px;">
+	<p></p>
+	</div>
           <div class="span1">
             <p>Ernest Oppetite</p>
           </div>
@@ -367,7 +377,7 @@
           <div class="span1">
             <p>James Michael Harrison</p>
           </div>
-          <div class="span1">
+          <div class="span1" style="width:5px;">
             <p></p>
           </div>
           <div class="span1">
@@ -379,6 +389,9 @@
           <div class="span1">
             <p>Jérôme Colomb</p>
           </div>
+	<div class="span1" style="width:35px;">
+	<p></p>
+	</div>
           <div class="span1">
             <p>Sébastien Lemieux-Codère</p>
           </div>
@@ -402,7 +415,7 @@
           <div class="span1">
             <p>Sanchit Jain</p>
           </div>
-          <div class="span1">
+          <div class="span1" style="width:5px;">
             <p></p>
           </div>
           <div class="span1">
@@ -414,6 +427,9 @@
           <div class="span1">
             <p>Nicholas Athanasoulias</p>
           </div>
+	<div class="span1" style="width:35px;">
+	<p></p>
+	</div>
           <div class="span1">
             <p>Alan Yang</p>
           </div>
@@ -437,7 +453,7 @@
           <div class="span1">
             <p>John George Willes</p>
           </div>
-          <div class="span1">
+          <div class="span1" style="width:5px;">
             <p></p>
           </div>
           <div class="span1">
@@ -449,6 +465,9 @@
           <div class="span1">
             <p></p>
           </div>
+	<div class="span1" style="width:35px;">
+	<p></p>
+	</div>
           <div class="span1">
             <p>Nguyen Khoi Tran</p>
           </div>
@@ -621,7 +640,7 @@
                 </div>
                 <div class="face back" style="background: url('photos/sponsorshipBack.jpg') no-repeat; background-size: 100% ">
                     <div class="container">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption" style="background-color: transparent">
 
                           <div class="accordion" id="accordion1">
                             <div class="accordion-group">
@@ -802,9 +821,13 @@
                               <h2>
                                 Email: <a href="mailto:lunarex.mcgill@gmail.com">LunarEx.McGill@gmail.com</a> <br>
                                 Phone: 1-514-531-7542 (Nick Speal) <br>
-                                <a class="btn btn-facebook" href="http://www.facebook.com/mcgill.lunarex" target="_blank"><i class="icon-facebook"></i> | LunarEx on Facebook</a>
+                                <a href="http://www.facebook.com/mcgillrobotics" target="_blank">
+                                  <button class="btn btn-facebook"><i class="icon-facebook"></i> | LunarEx on Facebook </button>
+                                </a>
                                 <br>
-                                <a class="btn btn-linkedin" href="http://www.linkedin.com/company/2923717" target="_blank"><i class="icon-linkedin"></i> | LunarEx on LinkedIn</a>
+                                <a href="http://www.linkedin.com/company/2923717" target="_blank">
+                                  <button class="btn btn-linkedin"><i class="icon-linkedin"></i> | LunarEx on LinkedIn </button>
+                                </a>
                                 <br>
                                 Mailing Address: <br>
                                 McGill LunarEx Robotics <br>
@@ -843,7 +866,7 @@
                 </div>
                 <div class="face back" style="background: url('photos/historyBack.jpg') no-repeat; background-size: 100%">
                     <div class="container">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption" style="background-color: transparent">
                           <div class="accordion" id="accordion2">
                             <div class="accordion-group">
                               <div class="accordion-heading">
@@ -942,8 +965,46 @@
                         </div>
                     </div>
                 </div>  
+            </div>
           </div>
 
+<!-- 
+
+******   Media *********
+
+-->
+
+
+          <div class="item" data-slide-number="7">
+
+
+
+                          <div id="wrapper">
+                            <div id="slider">
+
+                              <div class="slide" style="background-image: url(photos/historyFront.jpg);">
+                                <div class="slide-block">
+                                  <h4>Ice Age</h4>
+                                  <p>Heading south to avoid a bad case of global frostbite, a group of migrating misfit creatures embark on a hilarious quest to reunite a human baby with his tribe.</p>
+                                </div>
+                              </div>
+
+                              <div class="slide" style="background-image: url(photos/historyBack.jpg);">
+                                <div class="slide-block">
+                                  <h4>For The Birds</h4>
+                                  <p>For the Birds is an animated short film, produced by Pixar Animation Studios released in 2000. It is shown in a theatrical release of the 2001 Pixar feature film Monsters, Inc.</p>
+                                </div>
+                              </div>
+
+                              <div class="slide" style="background-image: url(photos/historyFront.jpg);">
+                                <div class="slide-block">
+                                  <h4>UP</h4>
+                                  <p>A comedy adventure in which 78-year-old Carl Fredricksen fulfills his dream of a great adventure when he ties thousands of balloons to his house and flies away to the wilds of South America.</p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
 
         </div>
 
@@ -965,23 +1026,9 @@
             </feMerge>
             </filter>
             </svg> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-    </div>
   </body>
 </html>
 
@@ -1252,60 +1299,6 @@
         font-size: 20px;
         line-height: 200%;
       }
-
-        /* Flip animation */
-        .card-container {
-            position: relative;
-            -webkit-perspective: 1000;
-            -moz-perspective: 1000;
-            -ms-perspective: 1000;
-            -o-perspective: 1000;
-            margin: 0 0 20px 0;
-        }
-        .card {
-            position: relative;
-            -webkit-transform-style: preserve-3d;
-            -webkit-transition: 0.5s;
-            -moz-transform-style: preserve-3d;
-            -moz-transition: 0.5s;
-            -ms-transform-style: preserve-3d;
-            -ms-transition: 0.5s;
-            -o-transform-style: preserve-3d;
-            -o-transition: 0.5s;
-            height: 100%;
-        }
-        .card-container.flip .card {
-            -webkit-transform: rotateY(180deg);
-            -moz-transform: rotateY(180deg);
-            -ms-transform: rotateY(180deg);
-            -o-transform: rotateY(180deg);				
-        }
-        .face {
-            position: absolute;
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            -ms-backface-visibility: hidden;
-            -o-backface-visibility: hidden;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            padding-top:100px;
-        }
-        .front {
-            z-index: 10;
-        }
-        .back {
-            -webkit-transform: rotateY(180deg);
-            -moz-transform: rotateY(180deg);
-            -ms-transform: rotateY(180deg);
-            -o-transform: rotateY(180deg);
-        }
-        .card-container.flip .front {
-            z-index: 0;
-        } 
-        
         
         /*Thumbnail carousel */
         /*#thumbCarousel {
